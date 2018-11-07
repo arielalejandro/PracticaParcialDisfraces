@@ -1,5 +1,3 @@
-
-
 class Disfraz{
 	const nombre
 	const fechaCreacion
