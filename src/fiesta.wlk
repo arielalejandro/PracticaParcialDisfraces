@@ -45,4 +45,8 @@ class Fiesta{
 		return invitados.all({unInvitado => unInvitado.estaConforme() && unInvitado.esSexy()})
 	}
 	
+	method darPuntaje(disfraz){
+		return disfraz.puntaje(fecha)
+	}
+	
 }

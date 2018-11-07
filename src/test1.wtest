@@ -1,0 +1,22 @@
+import disfraces.*
+import fiesta.*
+import invitados.*
+
+describe "test fiesta de disfraces"{
+	
+	 
+	
+	var mickey = new Personaje(8)
+	const unaFechaDeCreacion = new Date(01,11,2018)
+	const unaFechaDeCompra = new Date(05,11,2018)
+	var muyGracioso = new Gracioso(10)
+	var unTobara = new Tobara(unaFechaDeCompra)
+	var unCareta = new Careta(mickey)
+	var disfrazCompleto = new Disfraz("disfraz completito", unaFechaDeCreacion, [muyGracioso,unCareta,unTobara,sexy])
+	const unaFechaDeFiesta = new Date(8,11,2018)
+	
+	
+	test "el Puntaje para el disfraz completo es 25" {
+		assert.equals(25,disfrazCompleto.puntaje(unaFechaDeFiesta))
+	}	
+}
